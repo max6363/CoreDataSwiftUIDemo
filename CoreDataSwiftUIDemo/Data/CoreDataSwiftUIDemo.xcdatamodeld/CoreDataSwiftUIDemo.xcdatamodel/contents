@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21A344" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Device" representedClassName="Device" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Employee" inverseName="asset" inverseEntity="Employee"/>
+    </entity>
+    <entity name="Employee" representedClassName="Employee" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="devices" optional="YES" attributeType="Transformable" customClassName="[Device]"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="asset" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Device" inverseName="person" inverseEntity="Device"/>
+    </entity>
+    <elements>
+        <element name="Device" positionX="18" positionY="90" width="128" height="74"/>
+        <element name="Employee" positionX="-27" positionY="18" width="128" height="104"/>
+    </elements>
+</model>

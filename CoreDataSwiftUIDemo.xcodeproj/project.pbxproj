@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88AD328E2758FD0400E8E7C8 /* Device+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AD328A2758FD0400E8E7C8 /* Device+CoreDataClass.swift */; };
+		88AD328F2758FD0400E8E7C8 /* Device+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AD328B2758FD0400E8E7C8 /* Device+CoreDataProperties.swift */; };
+		88AD32902758FD0400E8E7C8 /* Employee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AD328C2758FD0400E8E7C8 /* Employee+CoreDataClass.swift */; };
+		88AD32912758FD0400E8E7C8 /* Employee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AD328D2758FD0400E8E7C8 /* Employee+CoreDataProperties.swift */; };
 		88E005322758B19C00B97249 /* CoreDataSwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E005312758B19C00B97249 /* CoreDataSwiftUIDemoApp.swift */; };
 		88E005342758B19C00B97249 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E005332758B19C00B97249 /* ContentView.swift */; };
 		88E005362758B19D00B97249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E005352758B19D00B97249 /* Assets.xcassets */; };
 		88E005392758B19D00B97249 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E005382758B19D00B97249 /* Preview Assets.xcassets */; };
 		88E0053B2758B19D00B97249 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0053A2758B19D00B97249 /* Persistence.swift */; };
 		88E0053E2758B19D00B97249 /* CoreDataSwiftUIDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88E0053C2758B19D00B97249 /* CoreDataSwiftUIDemo.xcdatamodeld */; };
+		88E005502758B4AE00B97249 /* AddEmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0054F2758B4AE00B97249 /* AddEmployeeView.swift */; };
+		88E005522758B4C700B97249 /* AddDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E005512758B4C700B97249 /* AddDeviceView.swift */; };
+		88E005542758B5D100B97249 /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E005532758B5D100B97249 /* EmployeeListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88AD328A2758FD0400E8E7C8 /* Device+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataClass.swift"; sourceTree = "<group>"; };
+		88AD328B2758FD0400E8E7C8 /* Device+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		88AD328C2758FD0400E8E7C8 /* Employee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataClass.swift"; sourceTree = "<group>"; };
+		88AD328D2758FD0400E8E7C8 /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		88E0052E2758B19C00B97249 /* CoreDataSwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataSwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E005312758B19C00B97249 /* CoreDataSwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		88E005332758B19C00B97249 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +34,9 @@
 		88E005382758B19D00B97249 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88E0053A2758B19D00B97249 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		88E0053D2758B19D00B97249 /* CoreDataSwiftUIDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataSwiftUIDemo.xcdatamodel; sourceTree = "<group>"; };
+		88E0054F2758B4AE00B97249 /* AddEmployeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeView.swift; sourceTree = "<group>"; };
+		88E005512758B4C700B97249 /* AddDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceView.swift; sourceTree = "<group>"; };
+		88E005532758B5D100B97249 /* EmployeeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +70,10 @@
 			isa = PBXGroup;
 			children = (
 				88E005312758B19C00B97249 /* CoreDataSwiftUIDemoApp.swift */,
-				88E005332758B19C00B97249 /* ContentView.swift */,
+				88E0054C2758B3EC00B97249 /* Model */,
+				88E0054D2758B3FB00B97249 /* View */,
+				88E0054E2758B40400B97249 /* Data */,
 				88E005352758B19D00B97249 /* Assets.xcassets */,
-				88E0053A2758B19D00B97249 /* Persistence.swift */,
-				88E0053C2758B19D00B97249 /* CoreDataSwiftUIDemo.xcdatamodeld */,
 				88E005372758B19D00B97249 /* Preview Content */,
 			);
 			path = CoreDataSwiftUIDemo;
@@ -71,6 +85,37 @@
 				88E005382758B19D00B97249 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88E0054C2758B3EC00B97249 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88AD328A2758FD0400E8E7C8 /* Device+CoreDataClass.swift */,
+				88AD328B2758FD0400E8E7C8 /* Device+CoreDataProperties.swift */,
+				88AD328C2758FD0400E8E7C8 /* Employee+CoreDataClass.swift */,
+				88AD328D2758FD0400E8E7C8 /* Employee+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88E0054D2758B3FB00B97249 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88E005332758B19C00B97249 /* ContentView.swift */,
+				88E005532758B5D100B97249 /* EmployeeListView.swift */,
+				88E0054F2758B4AE00B97249 /* AddEmployeeView.swift */,
+				88E005512758B4C700B97249 /* AddDeviceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88E0054E2758B40400B97249 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				88E0053C2758B19D00B97249 /* CoreDataSwiftUIDemo.xcdatamodeld */,
+				88E0053A2758B19D00B97249 /* Persistence.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +189,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				88E0053B2758B19D00B97249 /* Persistence.swift in Sources */,
+				88AD328F2758FD0400E8E7C8 /* Device+CoreDataProperties.swift in Sources */,
+				88AD328E2758FD0400E8E7C8 /* Device+CoreDataClass.swift in Sources */,
+				88AD32902758FD0400E8E7C8 /* Employee+CoreDataClass.swift in Sources */,
+				88AD32912758FD0400E8E7C8 /* Employee+CoreDataProperties.swift in Sources */,
+				88E005542758B5D100B97249 /* EmployeeListView.swift in Sources */,
 				88E005342758B19C00B97249 /* ContentView.swift in Sources */,
 				88E0053E2758B19D00B97249 /* CoreDataSwiftUIDemo.xcdatamodeld in Sources */,
+				88E005502758B4AE00B97249 /* AddEmployeeView.swift in Sources */,
+				88E005522758B4C700B97249 /* AddDeviceView.swift in Sources */,
 				88E005322758B19C00B97249 /* CoreDataSwiftUIDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +337,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +367,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
